@@ -1,0 +1,49 @@
+.o-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url(../../../assets/background.jpg) no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+
+  .title {
+    color: white;
+    margin:0;
+    padding:50px 20px;
+  }
+
+}
+
+.c-panel {
+    padding:10px;
+    font-size: 2em;
+    height: 60px;
+    width: 700px;
+    background-color: lightseagreen;
+    position: fixed;
+    top:0px;
+    color: white;
+}
+
+.c-panel-item{
+  margin-left:30px;
+  padding-right:10px;
+  border-right: 1px white groove;
+}
+.c-panel-item:hover{
+  background-color: lightgreen;
+}
+.c-panel-item:last-child{
+  border:none;
+}
+
+.clock-item{
+  display: inline-block;
+    width: 160px;
+}
+
+.c-active-item{
+  background-color:lightgreen;
+}

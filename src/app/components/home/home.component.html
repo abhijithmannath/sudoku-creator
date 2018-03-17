@@ -1,0 +1,17 @@
+<div class="o-container ">
+  <!--<h1 class="title">-->
+    <!--{{ 'PAGES.HOME.TITLE' | translate }}-->
+  <!--</h1>-->
+  <div class="c-panel">
+        <span class="c-panel-item clock-item">{{stopWatchStr}}</span>
+        <span class="icon-play c-panel-item" (click)="startStopWatch()"></span>
+        <span class="icon-time c-panel-item" (click)="resetWatch()"></span>
+        <span (click)="swapMode()" class="icon-user c-panel-item" [ngClass]="{'c-active-item': gMode == 1}"></span>
+        <span (click)="swapMode()" class="icon-layers c-panel-item" [ngClass]="{'c-active-item': gMode == 2}"></span>
+
+        <span class="icon-check-circle c-panel-item" (click)="createOrSolve()"></span>
+      <span class="icon-refresh-ccw c-panel-item" (click)="resetBoard()"></span>
+    <span class="icon-x-circle c-panel-item" (click)="resetSolutionOnly()"></span>
+  </div>
+  <app-sudoku-view [sMatrix]="sMatrix" [gStage]="gStage" [gMode]="gMode"></app-sudoku-view>
+</div>
